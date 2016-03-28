@@ -59,24 +59,24 @@ To use N1QL queries, couchbase requires you create a primary index.
 
 To build the server:
 
-  ./gradlew clean build
+    ./gradlew clean build
 
 To start the server from the project root:
 
-  java -jar build/libs/cst-1.0.jar
+    java -jar build/libs/cst-1.0.jar
 
 ### Build and run the UI
 
 To build the UI:
 
-  cd ui
-  reapp build
+    cd ui
+    reapp build
 
 #### Web UI
 
 To run the UI (from the 'ui' subdirectory):
 
-  reapp run
+    reapp run
 
 Access the mobile web client at [http://localhost:3010/customers/2004226978](http://localhost:3010/customers/2004226978).
 
@@ -88,30 +88,30 @@ Access the mobile web client at [http://localhost:3010/customers/2004226978](htt
 
 To build the IOS client (requires Xcode):
 
-  cd ui
-  reapp build ios
+    cd ui
+    reapp build ios
 
 Assuming Apache Cordova is installed as per the instructions on the [Cordova website](https://cordova.apache.org/#getstarted).
 
-  npm install -g cordova
-  cd ui/CstApp
-  cordova platform add ios
-  cordova plugin add whitelist
-  cordova plugin add console
-  cordova plugin add device
-  rm -r www
-  ln -s ../cst/build/ios www
-  cordova prepare
-  cordova run ios
+    npm install -g cordova
+    cd ui/CstApp
+    cordova platform add ios
+    cordova plugin add whitelist
+    cordova plugin add console
+    cordova plugin add device
+    rm -r www
+    ln -s ../cst/build/ios www
+    cordova prepare
+    cordova run ios
 
 With subsequent changes to the UI, redo the following steps
 
-  cd ui/cst
-  reapp build ios
+    cd ui/cst
+    reapp build ios
 
-  cd ../CstApp
-  cordova prepare
-  cordova run ios
+    cd ../CstApp
+    cordova prepare
+    cordova run ios
 
 ![List View](./images/events-ios.png)
 
