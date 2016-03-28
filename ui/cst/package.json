@@ -1,0 +1,20 @@
+{
+  "author": "Mark Moloney",
+  "name": "cst",
+  "repository": "",
+  "description": "",
+  "version": "1.0.0",
+  "main": "./app/app.js",
+  "reapp": "0.8",
+  "scripts": {
+    "test": "",
+    "start": "reapp run"
+  },
+  "dependencies": {
+    "moment": "^2.10.6",
+    "react": "0.13.2",
+    "react-remarkable": "^1.1.1",
+    "reapp-kit": "^1.2.0",
+    "reapp-ui": "^0.12.54"
+  }
+}
