@@ -5,6 +5,7 @@ class Home extends React.Component {
 
   componentWillMount() {
     const customerId = this.props.customerId || '2004226978';
+    console.log('Loading events with customerId=' + customerId);
     this.action.loadEvents(customerId);
   }
 
